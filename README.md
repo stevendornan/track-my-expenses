@@ -2,7 +2,7 @@
 
 > web platform built with the MERN stack & Redux.
 
-![screenshot](https://github.com/stevendornan/track-my-expenses/master/uploads/track-my-expenses.png)
+![screenshot](https://github.com/stevendornan/track-my-expenses/uploads/track-my-expenses.png)
 
 ## Features
 
