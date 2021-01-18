@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import ContentContainer from '../components/layout/ContentContainer'
 import { PricingTable, PricingSlot, PricingDetail } from 'react-pricing-table'
+import Meta from '../components/layout/Meta'
 
 const StoreScreen = ({ history }) => {
   const userLogin = useSelector((state) => state.userLogin)
@@ -14,6 +15,7 @@ const StoreScreen = ({ history }) => {
   }, [history, userInfo])
   return (
     <>
+      <Meta title='Track My Expenses | Store' />
       <ContentContainer>
         <h1 className='title'>Store</h1>
         <hr />

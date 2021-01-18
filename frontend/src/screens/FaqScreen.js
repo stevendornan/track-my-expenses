@@ -1,10 +1,12 @@
 import React from 'react'
 import { Accordion, Card } from 'react-bootstrap'
 import ContentContainer from '../components/layout/ContentContainer'
+import Meta from '../components/layout/Meta'
 
 const FaqScreen = () => {
   return (
     <>
+      <Meta title='Track My Expenses | FAQ' />
       <ContentContainer>
         <h1 className='title text-center'>Frequently Asked Questions</h1>
         <Accordion defaultActiveKey='0' className='mt-5 ml-3'>
