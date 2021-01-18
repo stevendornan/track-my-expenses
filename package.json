@@ -1,0 +1,49 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "Backend for expense tracker",
+  "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client \"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevendornan/expense-tracker.git"
+  },
+  "author": "Steven Dornan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevendornan/expense-tracker/issues"
+  },
+  "homepage": "https://github.com/stevendornan/expense-tracker#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-mongo-sanitize": "^2.0.1",
+    "helmet": "^4.2.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.5",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.17",
+    "stripe": "^8.131.1",
+    "xss": "^1.0.8",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
